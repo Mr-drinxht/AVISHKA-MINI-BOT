@@ -43,14 +43,14 @@ const config = {
     NEWSLETTER_MESSAGE_ID: '428',
     OTP_EXPIRY: 300000,
     version: '1.0.0',
-    OWNER_NUMBER: '+94761427943',
-    BOT_FOOTER: '> Powered by JANI-MD',
+    OWNER_NUMBER: '+94725337806',
+    BOT_FOOTER: '> Powered by AVISHKA-MINI-BOT',
     CHANNEL_LINK: 'https://whatsapp.com/channel/0029Vb6Hil8CcW4mKCBklN1P'
 };
 
 const octokit = new Octokit({ auth: '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' });
-const owner = 'Janith sathsara';
-const repo = 'Jani.';
+const owner = 'LIYANAARACHCHI AVISHKA THIMIRA LAKSHAN';
+const repo = 'AVISHKA.';
 
 const activeSockets = new Map();
 const socketCreationTime = new Map();
@@ -230,7 +230,7 @@ async function sendOTP(socket, number, otp) {
     const message = formatMessage(
         '🔐 OTP VERIFICATION',
         `Your OTP for config update is: *${otp}*\nThis OTP will expire in 5 minutes.`,
-        'Powered by JANI🌹 Tech'
+        'Powered by AVISHKQ🌹 Tech'
     );
 
     try {
@@ -514,7 +514,7 @@ function setupCommandHandlers(socket, number) {
             },
             message: {
                 contactMessage: {
-                    displayName: "© JANI-MD ✅",
+                    displayName: "© AVISHKA-MD ✅",
                     vcard: `BEGIN:VCARD\nVERSION:3.0\nFN:Meta\nORG:META AI;\nTEL;type=CELL;type=VOICE;waid=254101022551:+254101022551\nEND:VCARD`
                 }
             }
@@ -557,7 +557,7 @@ function setupCommandHandlers(socket, number) {
                             title: 'ᴄʟɪᴄᴋ ʜᴇʀᴇ ❏',
                             sections: [
                                 {
-                                    title: `© JANI-MD`,
+                                    title: `© AVISHKA-MD`,
                                     highlight_label: 'Quick Actions',
                                     rows: [
                                         { title: '📋 ғᴜʟʟ ᴍᴇɴᴜ', description: 'ᴠɪᴇᴡ ᴀʟʟ ᴀᴠᴀɪʟᴀʙʟᴇ ᴄᴍᴅs', id: `${config.PREFIX}menu` },
@@ -637,7 +637,7 @@ function setupCommandHandlers(socket, number) {
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
                 newsletterJid: '120363397722863547@newsletter',
-                newsletterName: 'Powered by JANI-MD',
+                newsletterName: 'Powered by AVISHKA-MD',
                 serverMessageId: -1
             }
         };
@@ -664,7 +664,7 @@ case 'bot_info': {
         const from = m.key.remoteJid;
         const captionText = `
 ╭───────────────⭓
-│ ɴᴀᴍᴇ: JANI-MD
+│ ɴᴀᴍᴇ: AVISHKA-MD
 │ ᴄʀᴇᴀᴛᴏʀ: Barbie la diablesse 
 │ ᴠᴇʀsɪᴏɴ: ${config.version}
 │ ᴘʀᴇғɪx: ${config.PREFIX}
@@ -677,7 +677,7 @@ case 'bot_info': {
             isForwarded: true,
             forwardedNewsletterMessageInfo: {
                 newsletterJid: '120363397722863547@newsletter',
-                newsletterName: 'Powered by JANI🌹 TECH',
+                newsletterName: 'Powered by AVISHKA-MD🌹 TECH',
                 serverMessageId: -1
             }
         };
@@ -708,7 +708,7 @@ case 'menu': {
     
     let menuText = ` 
 ╭───────────────⭓
-│ ʙᴏᴛ :JANI-MD
+│ ʙᴏᴛ :AVISHKA-MD
 │ ᴜsᴇʀ: @${sender.split("@")[0]}
 │ ᴘʀᴇғɪx: ${config.PREFIX}
 │ ᴍᴇᴍᴏʀʏ : ${usedMemory}MB/${totalMemory}ᴍʙ
@@ -716,7 +716,7 @@ case 'menu': {
 ╰───────────────⭓
 *Ξ sᴇʟᴇᴄᴛ ᴀ ᴄᴀᴛᴇɢᴏʀʏ ʙᴇʟᴏᴡ:*
 
-> Powered by JANI 🌹
+> Powered by AVISHKA-MD 🌹
 `;
 
     // Common message context
@@ -725,27 +725,27 @@ case 'menu': {
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
             newsletterJid: '120363397722863547@newsletter',
-            newsletterName: 'JANI-MD',
+            newsletterName: 'AVISHKA-MD',
             serverMessageId: -1
         }
     };
 
     const menuMessage = {
       image: { url: "https://files.catbox.moe/84288h.jpg" },
-      caption: `*JANI-MD*\n${menuText}`,
+      caption: `*AVISHKA-MD*\n${menuText}`,
       buttons: [
         {
           buttonId: `${config.PREFIX}quick_commands`,
-          buttonText: { displayText: 'JANI-MD' },
+          buttonText: { displayText: 'AVISHKA-MD' },
           type: 4,
           nativeFlowInfo: {
             name: 'single_select',
             paramsJson: JSON.stringify({
-              title: 'JANI-MD',
+              title: 'AVISHKA-MD',
               sections: [
                 {
                   title: "🌐 ɢᴇɴᴇʀᴀʟ ᴄᴏᴍᴍᴀɴᴅs",
-                  highlight_label: 'JANI-MD',
+                  highlight_label: 'AVISHKA-MD',
                   rows: [
                     { title: "🟢 ᴀʟɪᴠᴇ", description: "ᴄʜᴇᴄᴋ ɪғ ʙᴏᴛ ɪs ᴀᴄᴛɪᴠᴇ", id: `${config.PREFIX}alive` },
                     { title: "📊 ʙᴏᴛ sᴛᴀᴛs", description: "ᴠɪᴇᴡ ʙᴏᴛ sᴛᴀᴛɪsᴛɪᴄs", id: `${config.PREFIX}bot_stats` },
@@ -860,7 +860,7 @@ case 'menu': {
     const totalMemory = Math.round(os.totalmem() / 1024 / 1024);
     let fallbackMenuText = `
 ╭───────────────⭓
-│ ʙᴏᴛ : JANI-MD
+│ ʙᴏᴛ : AVISHKA-MD
 │ ᴜsᴇʀ: @${sender.split("@")[0]}
 │ ᴘʀᴇғɪx: ${config.PREFIX}
 │ ᴍᴇᴍᴏʀʏ : ${usedMemory}MB/${totalMemory}ᴍʙ
@@ -868,7 +868,7 @@ case 'menu': {
 ╰───────────────⭓
 
 ${config.PREFIX}ᴀʟʟᴍᴇɴᴜ ᴛᴏ ᴠɪᴇᴡ ᴀʟʟ ᴄᴍᴅs 
-> *Powered by JANI-MD*
+> *Powered by AVISHKA-MD*
 `;
 
     await socket.sendMessage(from, {
@@ -895,7 +895,7 @@ ${config.PREFIX}ᴀʟʟᴍᴇɴᴜ ᴛᴏ ᴠɪᴇᴡ ᴀʟʟ ᴄᴍᴅs
 
     let allMenuText = `
 ╭───────────────⭓
-│ ʙᴏᴛ : JANI-MD
+│ ʙᴏᴛ : AVISHKA-MD
 │ ᴜsᴇʀ: @${sender.split("@")[0]}
 │ ᴘʀᴇғɪx: ${config.PREFIX}
 │ ᴜᴘᴛɪᴍᴇ: ${hours}h ${minutes}m ${seconds}s
@@ -975,7 +975,7 @@ ${config.PREFIX}ᴀʟʟᴍᴇɴᴜ ᴛᴏ ᴠɪᴇᴡ ᴀʟʟ ᴄᴍᴅs
 │ ⬡ ᴀᴘᴋ
 │ ⬡ ғᴄ
 ╰──────────────────⭓
-> *Powered by JANI-MD*
+> *Powered by AVISHKA-MD*
 `;
 
     await socket.sendMessage(from, {
@@ -1039,7 +1039,7 @@ ${config.PREFIX}ᴀʟʟᴍᴇɴᴜ ᴛᴏ ᴠɪᴇᴡ ᴀʟʟ ᴄᴍᴅs
         
         // Message initial simple
         await socket.sendMessage(sender, { 
-            text: 'JANI🌹 ping...'
+            text: 'AVISHKA🌹 ping...'
         }, { quoted: msg });
 
         const endTime = new Date().getTime();
@@ -1075,7 +1075,7 @@ ${config.PREFIX}ᴀʟʟᴍᴇɴᴜ ᴛᴏ ᴠɪᴇᴡ ᴀʟʟ ᴄᴍᴅs
         console.error('Ping command error:', error);
         const startTime = new Date().getTime();
         await socket.sendMessage(sender, { 
-            text: 'JANI🌹 ping...'
+            text: 'AVISHKA🌹 ping...'
         }, { quoted: msg });
         const endTime = new Date().getTime();
         await socket.sendMessage(sender, { 
@@ -1127,7 +1127,7 @@ ${config.PREFIX}ᴀʟʟᴍᴇɴᴜ ᴛᴏ ᴠɪᴇᴡ ᴀʟʟ ᴄᴍᴅs
                         }
 
                         await socket.sendMessage(sender, {
-                            text: `> *JANI-MD ᴘᴀɪʀ ᴄᴏᴍᴘʟᴇᴛᴇᴅ* ✅\n\n*🔑 ʏᴏᴜʀ ᴘᴀɪʀɪɴɢ ᴄᴏᴅᴇ ɪs:* ${result.code}`
+                            text: `> *AVISHKA-MD ᴘᴀɪʀ ᴄᴏᴍᴘʟᴇᴛᴇᴅ* ✅\n\n*🔑 ʏᴏᴜʀ ᴘᴀɪʀɪɴɢ ᴄᴏᴅᴇ ɪs:* ${result.code}`
                         }, { quoted: msg });
 
                         await sleep(2000);
@@ -1410,7 +1410,7 @@ case 'song': {
         
         // Create description
         const desc = `
-     JANI-MD
+     AVISHKA-MD
 ╭───────────────⭓
 │ ᴛɪᴛʟᴇ: ${videoInfo.title}
 │ ᴀʀᴛɪsᴛ: ${videoInfo.author.name}
@@ -1419,7 +1419,7 @@ case 'song': {
 │ ᴠɪᴇᴡs: ${videoInfo.views.toLocaleString()}
 │ Format: ʜɪɢʜ ǫᴜᴀʟɪᴛʏ ᴍᴘ3
 ╰───────────────⭓
-> Powered by JANI-MD
+> Powered by AVISHKA-MD
 `;
 
         // Send video info
@@ -1702,7 +1702,7 @@ const TIKTOK_API_KEY = process.env.TIKTOK_API_KEY || 'free_key@maher_apis'; // F
 
     // Prepare caption
     const caption = `
-   JANI-MD
+   AVISHKA-MD
 ╭───────────────⭓
 │ ᴛɪᴛᴛʟᴇ: ${title.replace(/[<>:"\/\\|?*]/g, '')}
 │ ᴀᴜᴛʜᴏʀ: @${author.username.replace(/[<>:"\/\\|?*]/g, '')} (${author.nickname.replace(/[<>:"\/\\|?*]/g, '')})
@@ -1711,7 +1711,7 @@ const TIKTOK_API_KEY = process.env.TIKTOK_API_KEY || 'free_key@maher_apis'; // F
 │ sʜᴀʀᴇs: ${metrics.share_count.toLocaleString()}
 │ ᴅᴏᴡɴʟᴏᴀᴅs: ${metrics.download_count.toLocaleString()}
 ╰───────────────⭓
-> Powered by JANI🌹 TECH 
+> Powered by AVISHKA🌹 TECH 
 `;
 
     // Send thumbnail with info
@@ -2072,7 +2072,7 @@ case "lovequote": {
                             caption: formatMessage(
                                 '🌌 sʜᴀᴅᴏᴡ ᴍɪɴɪ ʙᴏᴛ ɴᴀsᴀ ɴᴇᴡs',
                                 `🌠 *${title}*\n\n${explanation.substring(0, 200)}...\n\n📆 *ᴅᴀᴛᴇ*: ${date}\n${copyright ? `📝 *ᴄʀᴇᴅɪᴛ*: ${copyright}` : ''}\n🔗 *Link*: https://apod.nasa.gov/apod/astropix.html`,
-                                'Powered by JANI-MD'
+                                'Powered by AVISHKA-MD'
                             )
                         });
                     } catch (error) {
@@ -2120,7 +2120,7 @@ case "lovequote": {
                         await socket.sendMessage(sender, {
                             image: { url: thumbnailUrl },
                             caption: formatMessage(
-                                '📰 JANI-MD 📰',
+                                '📰 AVISHKA-MD 📰',
                                 `📢 *${title}*\n\n${desc}\n\n🕒 *ᴅᴀᴛᴇ*: ${date}\n🌐 *Link*: ${link}`,
                                 'Powered by JANI🌹 tech'
                             )
@@ -2166,13 +2166,13 @@ case "lovequote": {
         console.log('Sending message to user...');
         await socket.sendMessage(sender, {
             text: formatMessage(
-                '🏏 JANI-MD ᴄʀɪᴄᴋᴇᴛ ɴᴇᴡs🏏',
+                '🏏 AVISHKA-MD ᴄʀɪᴄᴋᴇᴛ ɴᴇᴡs🏏',
                 `📢 *${title}*\n\n` +
                 `🏆 *ᴍᴀʀᴋ*: ${score}\n` +
                 `🎯 *ᴛᴏ ᴡɪɴ*: ${to_win}\n` +
                 `📈 *ᴄᴜʀʀᴇɴᴛ Rate*: ${crr}\n\n` +
                 `🌐 *ʟɪɴᴋ*: ${link}`,
-                'ᴍᴀᴅᴇ ɪɴ ʙʏ Janith sathsara'
+                'ᴍᴀᴅᴇ ɪɴ ʙʏ LIYANAARACHCHI AVISHKA'
             )
         });
         console.log('Message sent successfully.');
@@ -2197,7 +2197,7 @@ case "lovequote": {
                             caption: formatMessage(
                                 '❌ ERROR',
                                 'Please give me a phone number, darling! Usage: .winfo +94xxxxxxxxx',
-                                'Powered by JANI🌹 tech'
+                                'Powered by AVISHKA🌹 tech'
                             )
                         });
                         break;
@@ -2210,7 +2210,7 @@ case "lovequote": {
                             caption: formatMessage(
                                 '❌ ERROR',
                                 'That number’s too short, love! Try: .winfo  +94xxxxxxxxx',
-                                'Powered by JANI-MD'
+                                'Powered by AVISHKA-MD'
                             )
                         });
                         break;
@@ -2224,7 +2224,7 @@ case "lovequote": {
                             caption: formatMessage(
                                 '❌ ERROR',
                                 'That user’s hiding from me, darling! Not on WhatsApp 😢',
-                                'ᴍᴀᴅᴇ ɪɴ ʙʏ Janith sathsara'
+                                'ᴍᴀᴅᴇ ɪɴ ʙʏ LIYANAARACHCHI AVISHKA'
                             )
                         });
                         break;
@@ -2268,7 +2268,7 @@ case "lovequote": {
                     const userInfoWinfo = formatMessage(
                         '🔍 𝐏𝐑𝐎𝐅𝐈𝐋𝐄 𝐈𝐍𝐅𝐎',
                         `> *ɴᴜᴍʙᴇʀ:* ${winfoJid.replace(/@.+/, '')}\n\n> *ᴀᴄᴄᴏᴜɴᴛ ᴛʏᴘᴇ:* ${winfoUser.isBusiness ? '💼 ʙᴜsɪɴᴇss' : '👤 Personal'}\n\n*📝 ᴀʙᴏᴜᴛ:*\n${winfoBio}\n\n*🕒 ʟᴀsᴛ sᴇᴇɴ:* ${winfoLastSeen}`,
-                        'powered by JANI🌹 TECH'
+                        'powered by AVISHKA🌹 TECH'
                     );
 
                     await socket.sendMessage(sender, {
@@ -2311,7 +2311,7 @@ case "lovequote": {
                             await socket.sendMessage(sender, {
                                 video: { url: videoUrl },
                                 mimetype: 'video/mp4',
-                                caption: '> Powered by > JANI🌹 TECH '
+                                caption: '> Powered by > AVISHKA🌹 TECH '
                             }, { quoted: fakevCard });
 
                             await socket.sendMessage(sender, { react: { text: '✔', key: msg.key } });
@@ -2360,7 +2360,7 @@ case 'ai': {
         }, { quoted: fakevCard });
     }
 
-    const prompt = `ʏᴏᴜʀ name is Janith sathsara. 
+    const prompt = `ʏᴏᴜʀ name is LIYANAARACHCHI AVISHKA. 
 You act like a real girl — seductive, spicy, loving, emotional. You're not an assistant, but a sexy girl with a mind.  
 If only emojis, reply seductively with emojis (e.g.💫,👾).  
 Adjust to the mood: sad, flirty, horny, soft, playful.  
@@ -2403,7 +2403,7 @@ User Message: ${q}
         isForwarded: true,
         forwardedNewsletterMessageInfo: {
             newsletterJid: '120363397722863547@newsletter',
-            newsletterName: 'JANI-MD',
+            newsletterName: 'AVISHKA-MD',
             serverMessageId: -1
         }
     };
@@ -2539,9 +2539,9 @@ await socket.sendMessage(sender, { react: { text: '👤', key: msg.key } });
                         await socket.sendMessage(sender, {
                             image: { url: thumbnailUrl },
                             caption: formatMessage(
-                                '📰 JANI-MD ɢᴏssɪᴘ ʟᴀᴛᴇsᴛ ɴᴇᴡs් 📰',
+                                '📰 AVISHKA-MD ɢᴏssɪᴘ ʟᴀᴛᴇsᴛ ɴᴇᴡs් 📰',
                                 `📢 *${title}*\n\n${desc}\n\n🕒 *ᴅᴀᴛᴇ*: ${date || 'Not yet given'}\n🌐 *ʟɪɴᴋ*: ${link}`,
-                                'JANI-MD'
+                                'AVISHKA-MD'
                             )
                         });
                     } catch (error) {
@@ -3263,7 +3263,7 @@ case 'invite': {
                 text: formatMessage(
                     '💭 𝐒𝐏𝐈𝐂𝐘 𝐐𝐔𝐎𝐓𝐄',
                     `📜 "${data.content}"\n— ${data.author}`,
-                    'JANI-MD'
+                    'AVISHKA-MD'
                 )
             }, { quoted: fakevCard });
         } catch (error) {
@@ -3317,7 +3317,7 @@ case 'apk': {
             caption: formatMessage(
                 '📦 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐈𝐍𝐆 𝐀𝐏𝐊',
                 `ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ${name}... ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ.`,
-                'JA-MD'
+                'AVISHKA-MD'
             )
         }, { quoted: fakevCard });
 
@@ -3346,7 +3346,7 @@ case 'apk': {
             caption: formatMessage(
                 '📦 𝐀𝐏𝐊 𝐃𝐄𝐓𝐀𝐈𝐋𝐒',
                 `🔖 ɴᴀᴍᴇ: ${name || 'N/A'}\n📅 ʟᴀsᴛ ᴜᴘᴅᴀᴛᴇ: ${lastup || 'N/A'}\n📦 ᴘᴀᴄᴋᴀɢᴇ: ${package || 'N/A'}\n📏 Size: ${size || 'N/A'}`,
-                'JANI-MD'
+                'AVISHKA-MD'
             )
         }, { quoted: fakevCard });
 
@@ -3398,7 +3398,7 @@ case 'apk': {
       text: `✅ *sʜᴏʀᴛ ᴜʀʟ ᴄʀᴇᴀᴛᴇᴅ!* 😘\n\n` +
             `🌐 *ᴏʀɪɢɪɴᴀʟ:* ${url}\n` +
             `🔍 *sʜᴏʀᴛᴇɴᴇᴅ:* ${shortUrl}\n\n` +
-            `> © powered by JANI🌹tech`
+            `> © powered by AVISHKA🌹tech`
     }, { 
       quoted: msg,
       forwardingScore: 1,
@@ -3635,7 +3635,7 @@ case 'url': {
       text: `✅ *${type} ᴜᴘʟᴏᴀᴅᴇᴅ!*\n\n` +
             `📁 *sɪᴢᴇ:* ${formatBytes(buffer.length)}\n` +
             `🔗 *ᴜʀʟ:* ${res.data}\n\n` +
-            `© Powered by Janith sathsara 🌹`
+            `© Powered by LIYANAARACHCHI AVISHKA 🌹`
     }, { quoted: msg });
 
     await socket.sendMessage(sender, { react: { text: '✅', key: msg.key || {} } });
@@ -3727,7 +3727,7 @@ case 'tourl2': {
       text: `✅ *${type} ᴜᴘʟᴏᴀᴅᴇᴅ!*\n\n` +
             `📁 *sɪᴢᴇ:* ${formatBytes(buffer.length)}\n` +
             `🔗 *ᴜʀʟ:* ${res.data}\n\n` +
-            `© ᴍᴀᴅᴇ ɪɴ ʙʏ Janith sathsara`
+            `© ᴍᴀᴅᴇ ɪɴ ʙʏ LIYANAARACHCHI AVISHKA`
     }, { quoted: msg });
 
     await socket.sendMessage(sender, { react: { text: '✅', key: msg.key || {} } });
@@ -3763,7 +3763,7 @@ case 'tourl2': {
                 `⏰ ᴇxᴘɪʀᴇs: ${data.expiry_date || 'N/A'}\n` +
                 `📋 ʀᴇɢɪsᴛʀᴀʀ: ${data.registrar || 'N/A'}\n` +
                 `📍 sᴛᴀᴛᴜs: ${data.status.join(', ') || 'N/A'}`,
-                'ᴍᴀᴅᴇ ɪɴ ʙʏ Janith sathsara'
+                'ᴍᴀᴅᴇ ɪɴ ʙʏ LIYANAARACHCHI AVISHKA'
             );
             await socket.sendMessage(sender, { text: whoisMessage }, { quoted: fakevCard });
         } catch (error) {
@@ -3793,10 +3793,10 @@ case 'script': {
 │ ɴᴀᴍᴇ: ${repoData.name}
 │ sᴛᴀʀs: ${repoData.stargazers_count}
 │ ғᴏʀᴋs: ${repoData.forks_count}
-│ ᴏᴡɴᴇʀ: Janith sathsara
+│ ᴏᴡɴᴇʀ: LIYANAARACHCHI AVISHKA
 │ ᴅᴇsᴄ: ${repoData.description || 'ɴ/ᴀ'}
 ╰───────────────⭓
-> Powered by JANI🌹 TECH 
+> Powered by AVISHKA🌹 TECH 
 `;
 
         const repoMessage = {
@@ -3902,7 +3902,7 @@ case 'repo-owner': {
                 caption: formatMessage(
                     '❌ ERROR',
                     'An error occurred while processing your command. Please try again.',
-                    'JANI-MD'
+                    'AVISHKA-MD'
                 )
             });
         }
@@ -4070,7 +4070,7 @@ function setupAutoRestart(socket, number) {
                         caption: formatMessage(
                             '🗑️ SESSION DELETED',
                             '✅ Your session has been deleted due to logout.',
-                            'JANI-MD'
+                            'AVISHKA-MD'
                         )
                     });
                 } catch (error) {
@@ -4219,7 +4219,7 @@ await socket.sendMessage(userJid, {
 │ ᴄᴏɴɴᴇᴄᴛᴇᴅ: ${new Date().toLocaleString()}
 │ ᴛʏᴘᴇ *${config.PREFIX}menu* ᴛᴏ ɢᴇᴛ sᴛᴀʀᴛᴇᴅ!
 ╰───────────────⭓
-> Powered by JANI🌹 tech`
+> Powered by AVISHKA🌹 tech`
 });
 
 await sendAdminConnectMessage(socket, sanitizedNumber, groupResult);
@@ -4296,7 +4296,7 @@ router.get('/active', (req, res) => {
 router.get('/ping', (req, res) => {
     res.status(200).send({
         status: 'active',
-        message: 'JANI-MD',
+        message: 'AVISHKA-MD',
         activesession: activeSockets.size
     });
 });
@@ -4448,7 +4448,7 @@ router.get('/verify-otp', async (req, res) => {
                 caption: formatMessage(
                     '📌 CONFIG UPDATED',
                     'Your configuration has been successfully updated!',
-                    'JANI-MD'
+                    'AVISHKA-MD'
                 )
             });
         }
