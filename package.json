@@ -1,5 +1,5 @@
 {
-  "name": "JANI-MD",
+  "name": "AVISHKA-MD",
   "version": "1.0.0",
   "description": "WhatsApp Bot with Multi-Number Support",
   "main": "index.js",
@@ -42,8 +42,8 @@
     "bot",
     "multi-device",
     "baileys",
-    "JANI-MD"
+    "AVISHKA-MD"
   ],
-  "author": "Janith sathsara",
+  "author": "LIYANAARACHCHI AVISHKA",
   "license": "MIT"
 }
